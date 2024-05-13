@@ -1,6 +1,6 @@
 {
   "name": "use-vuex-store",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build --mode production --target lib --name index ./src/hooks/useVuex.js",
