@@ -1,10 +1,9 @@
 {
-  "name": "useVuex",
-  "version": "1.0.0",
-  "private": true,
+  "name": "use-vuex-store",
+  "version": "1.1.0",
   "scripts": {
     "start": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --mode production --target lib --name index ./src/hooks/useVuex.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -21,6 +20,11 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3"
   },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {

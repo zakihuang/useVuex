@@ -44,10 +44,12 @@ export const useGetters = (moduleName, mapper) => {
   return useFunctionState(moduleName, mapper, "mapGetters");
 };
 
+// 使用 Composition API 创建类似于 mapActions 的函数
 export const useActions = (moduleName, mapper) => {
   return useFunctionHandle(moduleName, mapper, "mapActions");
 };
 
+// 使用 Composition API 创建类似于 mapMutations 的函数
 export const useMutations = (moduleName, mapper) => {
   return useFunctionHandle(moduleName, mapper, "mapMutations");
 };

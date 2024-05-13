@@ -12,12 +12,13 @@
 </template>
 
 <script setup>
+
 import {
   useState,
   useGetters,
   useActions,
   useMutations,
-} from "@/hooks/useVuex";
+} from "use-vuex-store";
 
 // 直接使用 State
 const storeState = useState("demo", ["demoList"]);
